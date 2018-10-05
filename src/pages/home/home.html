@@ -1,8 +1,14 @@
 <ion-header>
   <ion-navbar>
-    
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+
     <ion-title style="text-align: center">Login</ion-title>
   </ion-navbar>
+
+
 </ion-header>
 
 <ion-content padding>
@@ -21,5 +27,5 @@
   </ion-list>
 
   <button ion-button block (click)="login()">Entrar</button>
-  <button ion-button block outline>Registrar</button>
+  <button ion-button block outline (click)="login2()">Registrar</button>
 </ion-content>
